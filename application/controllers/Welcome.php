@@ -21,6 +21,7 @@ class Welcome extends Application
 	{
 		$this->data['pagebody'] = 'homepage';
 		
+				/*
                 $tasks = $this->tasks->all();   // get all the tasks
 
                 // count how many are not done
@@ -40,6 +41,7 @@ class Welcome extends Application
                 
                 // and save that as a view parameter
                 $this->data['remaining_tasks'] = $remainCount;
+				*/
                 $this->render(); 
 	}
 
