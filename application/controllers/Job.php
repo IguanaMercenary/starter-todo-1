@@ -43,11 +43,10 @@ function index_post($key=null)
     $this->response('ok', 200);
 }
 
-// Handle an incoming DELETE - cruD
+// Handle an incoming DELETE - delete a todo item
 function index_delete($key=null)
 {
     $this->tasks->delete($key);
-    $this->response('ok', 200);
+    $this->response(array('ok'), 200);
 }
-	// The other REST methods are not handled, since we are not doing maintenance
 }
