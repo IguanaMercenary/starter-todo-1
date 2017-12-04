@@ -17,32 +17,17 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	    function __construct()
+    {
+        parent::__construct();
+    }
 	public function index()
 	{
-		$this->data['pagebody'] = 'homepage';
-		
-				/*
-                $tasks = $this->tasks->all();   // get all the tasks
-
-                // count how many are not done
-                $count = 0;
-                $remainCount = 0;
-                foreach($tasks as $task) {
-                    if ($task->status != 2) $remainCount++;
-                }
-                // process the array in reverse, until we have five
-                foreach(array_reverse($tasks) as $task) {
-                    $task->priority = $this->app->priority($task->priority);
-                    $display_tasks[] = (array) $task;
-                    $count++;
-                    if ($count >= 5) break;
-                }
-                $this->data['display_tasks'] = $display_tasks;
-                
-                // and save that as a view parameter
-                $this->data['remaining_tasks'] = $remainCount;
-				*/
-                $this->render(); 
+//
+//		$this->data['pagebody'] = 'homepage';
+//
+//		$this->render();
+        $this->parser->parse("homepage",[]);
 	}
 
 }
