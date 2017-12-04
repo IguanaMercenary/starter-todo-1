@@ -135,4 +135,4 @@ $autoload['language'] = array();
 */
 $autoload['model'] = array('app');
 $autoload['model'] = array('app', 'tasks');
-$autoload['third_party'] = array('restful');
+$autoload['third_party'] = array(APPPATH.'third_party/restful/');

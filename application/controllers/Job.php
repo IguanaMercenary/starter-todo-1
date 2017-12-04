@@ -10,7 +10,7 @@ class Ports extends Rest_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Tasks');
+		$this->load->model('tasks');
 	}
 	// Handle an incoming GET ... return a menu item or all of them
 	function index_get($key=null)
